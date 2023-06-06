@@ -1,0 +1,13 @@
+<div>
+    <video id="custom-video" controls autoplay muted loop>
+        <source src="<?php echo $block->escapeHtmlAttr($block->getVideoUrl()); ?>" type="video/mp4">
+    </video>
+    <button id="custom-play-button" class="custom-button" aria-label="Play/Pause"></button>
+    <button id="custom-mute-button" class="custom-button" aria-label="Mute/Unmute"></button>
+</div>
+
+<script type="text/javascript">
+    require(['Custom_VideoWidget/js/main'], function (videoWidget) {
+        videoWidget(<?php echo $block->getJsLayout(); ?>);
+    });
+</script>    

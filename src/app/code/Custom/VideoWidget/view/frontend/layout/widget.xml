@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="urn:magento:widget-schema.xsd">
+    <widget id="custom_video_widget" class="Custom\VideoWidget\Block\Widget\VideoWidget">
+      <label translate="true">Custom Video Widget</label>
+      <description translate="true">Display a custom video widget with control buttons</description>
+        <parameters>
+            <parameter name="video_url" xsi:type="text" required="true" visible="true">
+            <label translate="true">Video URL</label>
+            <description translate="true">Enter the URL of the video</description> 
+        </parameters>
+    </widget>
+</widgets>
